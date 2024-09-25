@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!-- document element ou root element -->
+<html lang="pt-br">
+  <!-- configs da pagina -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevLinks</title>
+    <link rel="icon" href="./assets/Icon.svg" />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- sweetalert2 -->
+    <link rel="stylesheet" href="@sweetalert2/theme-dark/dark.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  <body>
+    <div id="bg-blur"></div>
+
+    <div id="container">
+      <!-- perfil -->
+      <div id="profile">
+        <img />
+        <p>@kaickoliveiraoficial</p>
+      </div>
+
+      <!-- botão switch -->
+      <div id="switch" onclick="toggleMode()">
+        <button></button>
+        <span></span>
+      </div>
+
+      <!-- lista -->
+      <ul>
+        <li>
+          <a href="https://github.com/kaickoliveiraoficial" target="_blank"
+            >Ver meu portfólio</a
+          >
+        </li>
+        <li>
+          <a href="https://kanban-vrt.netlify.app/" target="_blank"
+            >Meu último projeto</a
+          >
+        </li>
+        <!-- <li>
+          <a href="#" target="_blank">Meu currículo</a>
+        </li> -->
+        <li>
+          <a href="#" onclick="contactPopUp()">Entre em contato comigo</a>
+        </li>
+      </ul>
+
+      <!-- redes sociais -->
+      <div id="social-links">
+        <a href="https://github.com/kaickoliveiraoficial" target="_blank">
+          <ion-icon name="logo-github"></ion-icon>
+        </a>
+        <a href="https://instagram.com/kaickoliveiraoficial" target="_blank">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/kaick-gabriel-garcia-dos-santos-0381a6327/"
+          target="_blank"
+        >
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a>
+      </div>
+
+      <!-- PopUp -->
+      <div id="contato">
+        <div id="title-x-contato">
+          <p>Entre em contato</p>
+          <button onclick="closeDiv()" id="x-contato">
+            <ion-icon name="close"></ion-icon>
+          </button>
+        </div>
+        <div id="infos">
+          <h4>E-mail</h4>
+          <div id="text">
+            <input
+              type="text"
+              id="info-text"
+              value="kaickoliveirapfs@gmail.com"
+              readonly
+            />
+            <button onclick="copy()" id="copy-button">
+              <ion-icon name="copy-outline"></ion-icon>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- rodapé -->
+      <footer>
+        DevLinks by
+        <p>Kaick Oliveira</p>
+      </footer>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
