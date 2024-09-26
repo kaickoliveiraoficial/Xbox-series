@@ -30,7 +30,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-- [Acesse o projeto finalizado, online](kaickoliveiraoficial.github.io/Xbox-series/)
+- [Acesse o projeto finalizado, online](https://kaickoliveiraoficial.github.io/Xbox-series/)
 
 ## 🔖 Layout
 
